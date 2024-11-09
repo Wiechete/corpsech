@@ -15,6 +15,20 @@ public class PlayerDeath : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D other) 
+    {
+        if (other.gameObject.CompareTag("Killzone"))
+        {
+            DieWithoutRagdoll();
+        }
+    }
+
+    private void DieWithoutRagdoll()
+    {
+        PlayerSpawner.Instance.SpawnPlayer();
+        Destroy(gameObject);
+    }
+
     private void Die()
     {
         SpawnRagdoll();

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2501388419419277141}
   - component: {fileID: 4139647737974581322}
   - component: {fileID: 1055231032002269675}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ragdoll
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8846562235200780669}
   - component: {fileID: 6021190023334064398}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -200,7 +200,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4834225788574404042}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}

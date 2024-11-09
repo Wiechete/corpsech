@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
 
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
 
-        if (Input.GetButtonDown("Jump") && isGrounded)
+        if ((Input.GetButton("Jump") || Input.GetAxis("Vertical") > 0.1) && isGrounded)
         {
             Jump();
         }
