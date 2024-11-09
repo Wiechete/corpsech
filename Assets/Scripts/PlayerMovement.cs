@@ -22,13 +22,10 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        // Get player input
         horizontalInput = Input.GetAxis("Horizontal");
 
-        // Check if the player is on the ground
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
 
-        // Jump when pressing space and player is grounded
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             Jump();
@@ -37,7 +34,6 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        // Move the player horizontally
         rb.velocity = new Vector2(horizontalInput * moveSpeed, rb.velocity.y);
     }
 
@@ -48,7 +44,6 @@ public class PlayerMovement : MonoBehaviour
 
     void OnDrawGizmos()
     {
-        // Draw a circle in the editor for ground check visualization
         if (groundCheck != null)
         {
             Gizmos.color = Color.red;
